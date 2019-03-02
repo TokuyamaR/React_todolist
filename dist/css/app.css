@@ -20,6 +20,10 @@ body {
 }
 
 .inputArea {
+    margin-bottom: 15px;
+}
+
+.inputText {
     padding: 5px;
     height: 40px;
     font-size: 16px;
