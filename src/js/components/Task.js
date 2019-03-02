@@ -34,7 +34,7 @@ export default class Task extends React.Component {
         this.props.onRemove(this.state.id);
 
         //自分自身で削除する方法
-        $(e.target).parent('.list__item').remove();
+        // $(e.target).parent('.list__item').remove();
     }
 
     handleClickShowEdit() {
