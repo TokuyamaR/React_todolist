@@ -2,7 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import TodoList from './components/TodoList';
 import TodoCreator from './components/TodoCreater';
+import Search from "./components/Search";
 import _ from 'lodash';
+
 
 class TodoApp extends React.Component {
 
@@ -75,12 +77,7 @@ class TodoApp extends React.Component {
             <div>
                 <TodoCreator callBackAddTask={this.callBackAddTask}/>
 
-                {/*仮の検索Box(後々componentを挿入)*/}
-                <div className="searchBox">
-                    <i className="fa fa-search searchBox__icon" aria-hidden="true"/>
-                    <input type="text" className="searchBox__input js-search"
-                           value="" placeholder="somothing keyword"/>
-                </div>
+                <Search callBackSearch={this.callBackSearch}/>
 
                 <TodoList data={data} callBackRemoveTask={this.callBackRemoveTask}/>
             </div>
